@@ -162,8 +162,11 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+.fa-heart {
+			color: red;
+		  }
 
-/* Wrapper */
+		/* Wrapper */
 
 	@-moz-keyframes wrapper {
 		0% {
