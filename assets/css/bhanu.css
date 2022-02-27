@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'bhanu';
-  src: url('../font/bhanu.eot?47554838');
-  src: url('../font/bhanu.eot?47554838#iefix') format('embedded-opentype'),
-       url('../font/bhanu.woff2?47554838') format('woff2'),
-       url('../font/bhanu.woff?47554838') format('woff'),
-       url('../font/bhanu.ttf?47554838') format('truetype'),
-       url('../font/bhanu.svg?47554838#bhanu') format('svg');
+  src: url('../webfonts/bhanu.eot?47554838');
+  src: url('../webfonts/bhanu.eot?47554838#iefix') format('embedded-opentype'),
+       url('../webfonts/bhanu.woff2?47554838') format('woff2'),
+       url('../webfonts/bhanu.woff?47554838') format('woff'),
+       url('../webfonts/bhanu.ttf?47554838') format('truetype'),
+       url('../webfonts/bhanu.svg?47554838#bhanu') format('svg');
   font-weight: normal;
   font-style: normal;
 }
