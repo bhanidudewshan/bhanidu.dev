@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
-Domain: bhaniduherath.github.io
-Token: 84a7d09c0bd07a094f0a191d84f8d629f4a40f64588732f512a9aba025aed887
+Domain: bhanidu.dev
+Token: 923e4e1ea19b53c61c200c8fac70855656ab69e870181bfd1ef1d4d3944de9df
