@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700 &display=swap");
 
 
 
@@ -27,7 +27,10 @@ footer, header, hgroup, menu, nav, section {
 #textbody a {
 		text-decoration: none;
 	  }
-#textbody a {
+h1 {padding-bottom: 0.2em;
+	text-decoration: underline #6A00FF;
+  }
+	  #textbody a {
 		background:
 		  linear-gradient(
 			to right,
@@ -72,8 +75,9 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
+h3 {
+
+	font-family: "Ubuntu", sans-serif;
 }
 
 mark {
@@ -95,22 +99,12 @@ input, select, textarea {
 
 
 
- body {
-
- -webkit-user-select: none;
-
- -moz-user-select: none;
-
- -ms-user-select: none;
-
- user-select: none;
-
- }
-
 /* Basic */
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
+		
 	}
 
 	*, *:before, *:after {
@@ -119,7 +113,7 @@ input, select, textarea {
 
 	body {
 		background: #fff;
-		overflow: hidden;
+	
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -147,7 +141,7 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: dotted 0px;
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
@@ -264,7 +258,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #0f0029 url("images/bg.jpg") bottom left;
+		background: #000916 url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
