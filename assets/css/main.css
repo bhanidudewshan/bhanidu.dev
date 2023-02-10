@@ -25,7 +25,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-html, body {overflow-y: scroll;}
+html, body {
+	overflow-y: scroll;}
+
 #textbody a {
 		text-decoration: none;
 	  }
