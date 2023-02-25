@@ -757,7 +757,7 @@ input, select, textarea {
 		height: 6em;
 		left: 0;
 		line-height: 1em;
-		position: baseline;
+		position: relative;
 		text-align: center;
 		width: 100%;
 	}
