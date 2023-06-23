@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700 &display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wht@400,600 &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 
 html, body, div, span, applet, object,
@@ -81,7 +82,14 @@ table {
 
 h3 {
 
-	font-family: "Ubuntu", sans-serif;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+h4 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 23px;
+
 }
 
 mark {
@@ -262,14 +270,23 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #1D2017 url("images/bg.jpg") bottom left;
-		background-repeat: repeat-x;
-		height: 100%;
+		background: #0A131C url("images/bg.jpg") center;
+		background-repeat: repeat;
+		min-height: 100%;
+		min-width: 1024px;
+		width: 100%;
+		height: auto;
+		top: 0;
 		left: 0;
 		opacity: 1;
 		position: fixed;
-		top: 0;
 	}
+	@media screen and (max-width: 1024px) { /* Specific to this particular image */
+		img.bg {
+		  left: 50%;
+		  margin-left: -512px;   /* 50% */
+		}
+	  }
 
 	@-moz-keyframes bg {
 		0% {
@@ -1015,7 +1032,7 @@ input, select, textarea {
 	/* Header */
 
 		#header h1 {
-			font-size: 2.5em;
+		font-size: 3.2em;
 		text-shadow: red -1px 0, cyan 1px 0;
 }
 
