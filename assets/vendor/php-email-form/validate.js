@@ -50,25 +50,37 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    const isFormSubmit = action.includes('formsubmit.co/ajax/');
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      headers: {
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
+      }
     })
     .then(response => {
-      if( response.ok ) {
-        return response.text();
+      if (isFormSubmit) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          return response.json().then(data => { throw new Error(data.message || 'Form submission failed'); });
+        }
       } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+        }
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (isFormSubmit ? data.success : data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        throw new Error(isFormSubmit ? (data.message || 'Form submission failed') : data);
       }
     })
     .catch((error) => {
