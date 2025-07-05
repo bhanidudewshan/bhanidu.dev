@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: bhanidu.eu.org
+Token: 80b2b31fc0f9817393acac5954800ed92579317af9e9e9008ac550c4d6350f6d
